@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./images/logo.svg" alt="">
+    </div>
+  </header>
+  <main>
+    <div class="calculator-container">
+      <section class="data-section">
+        <div class="bill">
+          <label for="bill" class="title">Bill</label>
+          <input type="number" id="bill" class="input" name="bill" min="0" placeholder="0">
+        </div>
+        <div class="tip-selection">
+          <p class="title">Select Tip %</p>
+          <div class="labels">
+            <input type="radio" id="5percent" name="tip" value="5" class="radio-input">
+            <label for="5percent">5%</label>
+            <input type="radio" id="10percent" name="tip" value="10" class="radio-input">
+            <label for="10percent">10%</label>
+            <input type="radio" id="15percent" name="tip" value="15" class="radio-input">
+            <label for="15percent">15%</label>
+            <input type="radio" id="25percent" name="tip" value="25" class="radio-input">
+            <label for="25percent">25%</label>
+            <input type="radio" id="50percent" name="tip" value="50" class="radio-input">
+            <label for="50percent">50%</label>
+            <input type="radio" id="custom-radio" name="tip" value="0" class="radio-input">
+            <label for="custom-radio">
+            <input type="number" id="custom" class="input" name="tip" min="0" max="100" placeholder="Custom">
+            </label>
+          </div>
+        </div>
+        <div class="number-of-people">
+          <label for="people" class="title">Number of People</label>
+          <input type="number" name="people" id="people" class="input" placeholder="0">
+        </div>
+      </section>
+      <section class="result-section">
+        <div class="row tip-amount">
+          <div class="text">
+            <p class="white-text">Tip Amount</p>
+            <p class="under">/ person</p>
+          </div>
+          <p class="result">$0.00</p>
+        </div>
+        <div class="row total-person">
+          <div class="text">
+            <div class="white-text">Total</div>
+            <p class="under">/ person</p>
+          </div>
+          <p class="result">$0.00</p>
+        </div>
+        <button class="reset">RESET</button>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

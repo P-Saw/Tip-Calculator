@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+}
+body{
+    background-color: hsl(185, 41%, 84%);
+}
+header{
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator-container{
+    margin: auto;
+    width: 100%;
+    max-width: 30rem;
+    background-color: white;
+    border-radius: 1rem;
+    padding-bottom: 2rem;
+}
+
+/*  =============
+    DATA SECTIONS
+    ============= */
+.data-section{
+    width: 90%;
+    margin: auto;
+}
+
+/* TITLE CLASS */
+.title{
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: hsl(186, 14%, 43%);
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+/* INPUT CLASS */
+.input{
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+    padding-right: 1rem;
+}
+.input:focus{
+    outline-color: hsl(186, 14%, 43%);
+}
+.input::placeholder{
+    color: hsl(186, 14%, 43%);
+}
+
+
+.bill, .number-of-people{
+    display: flex;
+    flex-direction: column;
+}
+/* BILL */
+#bill{
+    background: url(./images/icon-dollar.svg) no-repeat left 1rem center, hsl(189, 41%, 97%);
+}
+
+/* TIP SELECTION */
+.labels{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.tip-selection label{
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 5px;
+}
+.radio-input:checked + label{
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+}
+.radio-input{
+    display: none;
+}
+
+/* NUMBER OF PEOPLE */
+#people{
+    background: url(./images/icon-person.svg) no-repeat left 1rem center, hsl(189, 41%, 97%);
+}
+
+/* RESULT SECTION */
+.result-section{
+    background-color: hsl(183, 100%, 15%);
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+.row{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.white-text, .under{
+    margin: 0;
+}
+.white-text{
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+}
+.under{
+    font-size: 0.8rem;
+    color: hsl(185, 41%, 84%);
+}
+.result{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color:hsl(172, 67%, 45%);
+}
+.reset{
+    width: 90%;
+    height: 3rem;
+    font-size: 1.5rem;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
