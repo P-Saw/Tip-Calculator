@@ -201,3 +201,9 @@ header{
         top: 2.5rem;
     }
 }
+
+@media (max-width: 330px){
+    .alarm-title::after{
+        top: 6rem
+    }
+}
