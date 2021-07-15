@@ -38,6 +38,7 @@ header{
 
 /* TITLE CLASS */
 .title{
+    position: relative;
     font-weight: 700;
     font-size: 0.9rem;
     color: hsl(186, 14%, 43%);
@@ -66,6 +67,7 @@ header{
 
 
 .bill, .number-of-people{
+    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -101,6 +103,19 @@ header{
 /* NUMBER OF PEOPLE */
 #people{
     background: url(./images/icon-person.svg) no-repeat left 1rem center, hsl(189, 41%, 97%);
+}
+.alarm{
+    border: 2px orange solid;
+}
+.alarm:focus{
+    outline-color:orange;
+}
+.alarm-title::after{
+    content: "Can't be zero!";
+    position: absolute;
+    right: 0;
+    top: 1.5rem;
+    color: orange;
 }
 
 /* RESULT SECTION */
@@ -150,6 +165,9 @@ header{
     margin-bottom: 1rem;
     cursor: pointer;
 }
+.reset:hover{
+    background-color: rgb(87, 238, 255);
+}
 
 @media (min-width: 900px){
     header{
@@ -178,5 +196,8 @@ header{
     }
     .reset{
         margin: 3rem 0 1rem 0;
+    }
+    .alarm-title::after{
+        top: 2.5rem;
     }
 }

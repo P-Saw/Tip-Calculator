@@ -78,6 +78,20 @@ const reset = () =>{
 const resetBtn = document.querySelector('.reset');
 resetBtn.addEventListener('click', reset);
 
+//CHECKING 0 IN PEOPLE
+const inputDiv = document.querySelector('.number-of-people');
+const check = (person) =>{
+    return parseInt(person)>0 ? true : false;
+}
+numberOfPeople.addEventListener('input', () =>{
+    if(!check(numberOfPeople.value)){
+        inputDiv.classList.add('alarm-title');
+        numberOfPeople.classList.add('alarm');
+    } else {
+        inputDiv.classList.remove('alarm-title');
+        numberOfPeople.classList.remove('alarm');
+    }
+})
 // ADDING UPDATE FUNCTION TO INPUTS
 radioBtns.forEach(btn =>{
     btn.addEventListener('click', updateValues);
