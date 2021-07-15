@@ -148,6 +148,7 @@ header{
     border: none;
     border-radius: 5px;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 @media (min-width: 900px){

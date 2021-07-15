@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tip calculator app</title>
   <link rel="stylesheet" href="style.css">
+  <script src="js.js" defer></script>
 </head>
 <body>
   <header>
@@ -32,10 +33,7 @@
             <label for="25percent">25%</label>
             <input type="radio" id="50percent" name="tip" value="50" class="radio-input">
             <label for="50percent">50%</label>
-            <input type="radio" id="custom-radio" name="tip" value="0" class="radio-input">
-            <label for="custom-radio">
-            <input type="number" id="custom" class="input" name="tip" min="0" max="100" placeholder="Custom">
-            </label>
+            <input type="number" id="custom" class="input" min="0" max="100" placeholder="Custom">
           </div>
         </div>
         <div class="number-of-people">
